@@ -15,6 +15,15 @@ public class MyDate {
 		day = cal.get(Calendar.DATE);//일 가져오기
 		isValid = true;
 	}//MyDate()
+	
+	public MyDate(int day, int month, int year) {
+//		this.day = day;
+		setDay(day);
+//		this.month = month;
+		setMonth(month);
+//		this.year = year;
+		setYear(year);
+	}//MyDate(int day, int month, int year)
 		
 	public int getDay() {
 		return day;
@@ -22,6 +31,32 @@ public class MyDate {
 	
 	public void setDay(int day) {
 		this.day = day;
+		switch(month) {
+		case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+			if(day >=1 && day <= 31) {
+				isValid = true;
+			}else {
+				isValid = false;
+			}
+			break;
+		case 2:
+			if(day >=1 && day <= 28) {
+				isValid = true;
+			}else {
+				isValid = false;
+			}
+			break;
+		default:
+			if(day >=1 && day <= 30) {
+				isValid = true;
+			}else {
+				isValid = false;
+			}
+			break;
+			
+		}
+		
+		
 	}//setDay()
 	
 	public int getMonth() {
@@ -30,6 +65,11 @@ public class MyDate {
 	
 	public void setMonth(int month) {
 		this.month = month;
+		if(month >=1 && month <=12) {
+			isValid = true;
+		}else {
+			isValid = false;
+		}
 	}//setMonth()
 	
 	public int getYear() {
@@ -38,11 +78,21 @@ public class MyDate {
 	
 	public void setYear(int year) {
 		this.year = year;
+		if(year >=1900 && year <=9999) {
+			isValid=true;
+		}else {
+			isValid=false;
+		}
 	}//setYear()
 
 	@Override
 	public String toString() {
-		return "MyDate [" + year + "년 " + month + "월 " + day + "일]";
+		if(isValid) {
+			return "MyDate [" + year + "년 " + month + "월 " + day + "일]";
+		}else {
+			return "MyDate [" + year + "년 " + month + "월 " + day + "일]로 유효하지 않은 날짜입니다.";
+			
+		}
 	}
 	
 }
