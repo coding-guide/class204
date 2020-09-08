@@ -10,7 +10,8 @@ public class Subway {
 	}
 	
 	public void pickUpPerson(int money) {
-		
+		this.money += money;
+		passengerCount++;
 	}
 
 	@Override

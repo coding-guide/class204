@@ -34,11 +34,22 @@ public class Person {
 	public void takeSubway(Subway subway) {
 //		돈을 냅니다.
 		if(this.age >= 19) {
+			if(this.money >= 1250) {
+				this.money = this.money - 1250; // this.money -= 1250;
+				subway.pickUpPerson(1250);
+			}else {
+				System.out.println("요금이 부족하여 지하철에 탈 수 없습니다.");
+			}
 			
 		}else {
-			
+			if(this.money >= 720) {
+				this.money -= 720; // this.money = this.money - 720;
+				subway.pickUpPerson(720);
+			}else {
+				System.out.println("요금이 부족하여 지하철에 탈 수 없습니다.");
+			}
 		}
-		
+				
 	}
 
 	@Override

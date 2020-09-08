@@ -10,7 +10,8 @@ public class Bus {
 	}
 	
 	public void pickUpPerson(int money) {
-		
+		this.money = this.money + money;
+		passegerCount++;
 	}
 
 	@Override

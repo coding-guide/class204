@@ -9,6 +9,28 @@ public class PersonTest {
 		System.out.println(bus);
 		Subway subway = new Subway("�д缱");
 		System.out.println(subway);
+		person.takeBus(bus);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		person.takeSubway(subway);
+		
+		System.out.println(bus);
+		System.out.println(subway);
 
 	}
 
