@@ -6,7 +6,9 @@ public class Person {
 	public int money;
 	
 	public Person(String personName, int age, int money) {
-		// TODO Auto-generated constructor stub
+		this.personName = personName;
+		this.age = age;
+		this.money = money;
 	}//Person constructor
 	
 	public void takeBus(Bus bus) {
