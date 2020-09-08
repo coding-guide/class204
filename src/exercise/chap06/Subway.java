@@ -17,6 +17,8 @@ public class Subway {
 	public String toString() {
 		return "Subway [lineNumber=" + lineNumber + ", passengerCount=" + passengerCount + ", money=" + money + "]";
 	}
+
+	
 	
 	
 
