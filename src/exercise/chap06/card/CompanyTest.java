@@ -11,6 +11,13 @@ public class CompanyTest {
 		System.out.println(card1);
 		System.out.println(card2);
 		System.out.println(card3);
+		TwoCard card4 = ins.createTwoCard("박건호");
+		TwoCard card5 = ins.createTwoCard("박성윤");
+		TwoCard card6 = ins.createTwoCard("박원진");
+		System.out.println(card4);
+		System.out.println(card5);
+		System.out.println(card6);
+		
 	}
 
 }
