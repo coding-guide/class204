@@ -1,4 +1,4 @@
-package exercise.chap07.exployee;
+package exercise.chap07.employee;
 
 public class Employees {
 	private static int serialNumber=10001;
@@ -11,6 +11,12 @@ public class Employees {
 		employeeName = name;
 		employeePhoneNumber = phoneNumber;
 	}
+
+	
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
 
 	@Override
 	public String toString() {
